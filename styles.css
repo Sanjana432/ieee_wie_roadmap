@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jura', sans-serif;
+  background-color: #2b003d;
+  color: white;
+  overflow: hidden;
+}
+
+.roadmap-container {
+  display: flex;
+  height: 100vh;
+  padding: 40px;
+  gap: 40px;
+}
+
+.event-display {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event-display h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.event-display h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #d5b7e8;
+}
+
+.event-display p {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e3d1f3;
+}
+
+.event-display img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.timeline {
+  flex: 1;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  padding-right: 10px;
+}
+
+.timeline ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.timeline li {
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #eee;
+  transition: color 0.2s;
+}
+
+.timeline li:hover,
+.timeline li.active {
+  color: #ffccff;
+  font-weight: bold;
+}
