@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Jura', sans-serif;
+  background: #2b003d;
+  color: white;
+}
+
+.roadmap {
+  display: flex;
+  height: 100vh;
+  padding: 40px;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.event-display {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event-display h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.event-display h3 {
+  font-size: 1.3rem;
+  color: #d5b7e8;
+}
+
+.event-display p {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e3d1f3;
+}
+
+.event-display img {
+  width: 400px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.timeline {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  max-height: 100vh;
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timeline li {
+  font-size: 1.1rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 5px 10px;
+}
+
+.timeline li.active {
+  color: #ffccff;
+  font-weight: bold;
+}
